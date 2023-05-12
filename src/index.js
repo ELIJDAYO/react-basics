@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Heading from './components/Heading';
-import List from './components/List';
+
+function Card(props) {
+  return (
+    <div>
+      <h2>{props.name}</h2>
+      <img src={props.img} alt="avatar_img" className="animal-img" />
+      <p>{props.tel}</p>
+      <p>{props.email}</p>
+    </div>
+  );
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <Heading />
-    <List />
+    <h1>My contact</h1>
+    <Card
+      name="Anaconda"
+      img="/images/1-2-anaconda-picture.png"
+      tel="+12345"
+      email="ana@con.com"
+    />
   </div>
 );
