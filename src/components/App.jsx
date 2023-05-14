@@ -10,6 +10,8 @@ function App() {
       <Avatar img="../images/avatar.jpg" />
       {contacts.map((contact) => (
         <Card
+          id={contact.id}
+          key={contact.id}
           name={contact.name}
           img={contact.img}
           tel={contact.tel}
