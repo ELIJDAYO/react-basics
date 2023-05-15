@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 
 function App() {
-  // param is starting state
-  // state is an array
-  // count is val, setCount is update func
+  setInterval(increase, 5000);
   const [count, setCount] = useState(0);
 
   function increase() {
