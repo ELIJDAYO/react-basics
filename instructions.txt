@@ -5,3 +5,5 @@ cd <dest_folder>
 npm init -y
 npm i react react-dom react-scripts
 npm start
+
+npm install uuid
